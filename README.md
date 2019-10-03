@@ -1,2 +1,2 @@
 # Brainf-ck
- Repository for my small brainf-ck projects
+ Repository for my brainf-ck tools and projects
