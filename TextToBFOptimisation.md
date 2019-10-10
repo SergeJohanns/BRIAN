@@ -14,7 +14,7 @@ Finally, we can save space on the first value *n* by writing it to a cell using 
 
 ## Splitting into blocks
 
-Finally, we can cut down on long ajustment sequences by deetecting when two sections are, on average, far removed in ASCII space, then splitting them up into blocks that have their own basis integer. This would handle situations like uppercase-lowercase conversions without needing ridiculously long strings of +s and -s, and since it means there are now basis integer constructions (and likely print constructions) throughout the code it makes the program look more visually interesting, too. This is the extent of optimisation of the first module.
+Finally, we can cut down on long ajustment sequences by deetecting when two sections are, on average, far removed in ASCII space, then splitting them up into blocks that have their own basis integer. This would handle situations like uppercase-lowercase conversions without needing ridiculously long strings of +s and -s, and since it means there are now basis integer constructions (and likely print constructions) throughout the code it makes the program look more visually interesting, too. This is the extent of optimisation of the first version of the module.
 
 ## Multiple passes
 
