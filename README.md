@@ -1,4 +1,4 @@
-# Brainf-uck
+# Brainf-ck
  Repository for my brainf tools and projects
 
 ## BRIAN.py
