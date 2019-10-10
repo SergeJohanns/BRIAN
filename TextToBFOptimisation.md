@@ -6,7 +6,7 @@ The simplest and least compact way to convert text to brainf code is to simply t
 
 ## The basis integer
 
-The next step is to find some *n* such that it has the lowest combined ASCII-value-difference with all of the characters in the text, then first write that to every cell that is to be used, then finally adjust all of the cells to get them to the correct value and print them. This produces code that is slightly more compact and interesting to read, but it still results in a long string of +s and -s that is far longer than it needs to be and also far less interesting in terms of code.
+The next step is to find some *n* such that it has the lowest combined ASCII-value-difference with all of the characters in the text, then first write that to every cell that is to be used, then finally adjust all of the cells to get them to the correct value and print them. This produces code that is slightly more compact and interesting to read, but it still results in a long string of +s and -s that is far longer than it needs to be and also not very interesting in terms of code.
 
 ## Looping with prime factors
 
