@@ -138,8 +138,9 @@ class CommandLine:
         originalIndex = interpreter.i
         try:
             with open(fileName, 'w') as writeFile:
-                writeFile.write(chr(interpreter.memory[interpreter.i]))
-                interpreter.IncMemCount(interpreter.i, interpreter.memory)
+                for i in range(fileLength):
+                    writeFile.write(chr(interpreter.memory[interpreter.i]))
+                    interpreter.IncMemCount(interpreter.i, interpreter.memory)
         except:
             print("Could not open file {} or an error occured while writing.".format(fileName))
         interpreter.i = originalIndex
@@ -158,8 +159,9 @@ class CommandLine:
         raise SystemExit
 
 #Main execution block
-print("\nBRIAN | Brainoof Reader, Interpreter And Nothing else\nWritten in Python by Serge Johanns")
-print("\nEnter ':h' for command help", end = "")
-interpreter = Interpreter()
-commandLine = CommandLine()
-commandLine.Listen()
+if __name__ == "__main__": #If the current process is a main process started by the user
+    print("\nBRIAN | Brainoof Reader, Interpreter And Nothing else\nWritten in Python by Serge Johanns")
+    print("\nEnter ':h' for command help", end = "")
+    interpreter = Interpreter()
+    commandLine = CommandLine()
+    commandLine.Listen()
