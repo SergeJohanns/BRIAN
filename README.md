@@ -14,7 +14,7 @@
  TTBf is a script that takes in an arbitrary string and generates a brainf script to print it. It is optimised for short code, but not optimally so. It breaks the string up into substrings whose characters are near in ASCII space to prevent excessively long adjustments.
  
 ### Using TextToBrainoof.py
- To use TTBf, simply import the module and run `TextToBrainoof.TextToBF("ASCIITEXTTOPROCESS")`. The function will return the brainf code in string form.
+ To use TTBf, simply run the script. It will repeatedly prompt the user for a string, then print the corresponding brainf code. To use the module as a dependency, import the module and run `TextToBrainoof.TextToBF("ASCIITEXTTOPROCESS")`. The function will return the brainf code in string form.
  
 ## Scripts
  I also uploaded a few scripts I made while playing around with the language.
