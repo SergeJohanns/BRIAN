@@ -1,5 +1,5 @@
-# Brainf-ck
- Repository for my brainf tools and projects
+# BRIAN
+ Repository for the BRIAN brainf interpreter and auxillary toolset.
 
 ## BRIAN.py
  Brian.py is the brainf interpreter I wrote for personal use. It has a command line where you can enter code line by line as well as load seperate script files. It also supports injecting files into and writing files from memory.
