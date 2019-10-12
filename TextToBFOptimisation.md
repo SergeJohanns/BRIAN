@@ -18,4 +18,4 @@ Finally, we can cut down on long ajustment sequences by deetecting when two sect
 
 ## Multiple passes
 
-For further optimisation, the earlier idea of a basis integer can be expanded upon by choosing a lower integer and adding it to some cells twice. This would allow one basis integer to cover two regions far apart in ASCII-space without needing long adjustment sequences.
+For further optimisation, the earlier idea of a basis integer can be expanded upon by choosing a lower integer and adding it to some cells twice. This would allow one basis integer to cover two regions far apart in ASCII-space without needing long adjustment sequences, but would make the idea of blocks obsolete. This is the implementation of the current version of the module.
