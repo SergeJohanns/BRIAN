@@ -80,7 +80,7 @@ class CommandLine:
     def __init__(self):
         self.commands = {'l':self.RunFile, 'i':self.Info, 'h':self.Help
                         ,'r':self.ResetInterpreter, 'q':self.QuitIt, '#':self.Comment
-                        , 'f':self.InjectFile, 'w':self.WriteFile}
+                        ,'f':self.InjectFile, 'w':self.WriteFile}
                         #Command format for commands is always :c argument where c is the command key
     def Listen(self):
         while True:
@@ -149,7 +149,7 @@ class CommandLine:
     def Info(self, command):
         print("Current memory:\n{}\nCurrent memory pointer: {}".format(interpreter.memory, interpreter.i))
     def Help(self, command):
-        print("Commands:\n:h   | Help\n:i   | Memory info\n:l   | Load file\n:q   | Exit interpreter\n:r   | Reset interpreter")
+        print("Commands:\n:h   | Help\n:i   | Memory info\n:#   | Comment\n:l   | Load script\n:f   | Load file into memory\n:w   | Write file from memory\n:r   | Reset interpreter\n:q   | Exit interpreter")
     def ResetInterpreter(self, command):
         global interpreter
         interpreter = Interpreter()
