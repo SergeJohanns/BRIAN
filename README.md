@@ -11,10 +11,10 @@
  If you only need an interpreter you can import the class Interpreter with `from BRIAN import Interpreter`. Then you can make a new interpreter object and any time you need to parse a string of code you call `interpreterInstance.Run("CODEINSTRINGFORMAT")`.
  
 ## TextToBrainoof.py
- TTBf is a script that takes in an arbitrary string and generates a brainf script to print it. It is optimised for short code, but not optimally so. It breaks the string up into substrings whose characters are near in ASCII space to prevent excessively long adjustments.
+ TTBf is a script that takes in an arbitrary string and generates a brainf script to print it. It is optimised to generate short scripts. It does this by finding an optimal integer (by trying out all of the options in the given context), then adding some multiple of that integer to each cell, in such a way that the result is as close to the needed character as possible. Finally, it performs a string of adjustments.
  
 ### Using TextToBrainoof.py
- To use TTBf, simply import the module and run `TextToBrainoof.TextToBF("ASCIITEXTTOPROCESS")`. The function will return the brainf code in string form.
+ To use TTBf, simply run the script. It will repeatedly prompt the user for a string, then print the corresponding brainf code. To use the module as a dependency, import the module and run `TextToBrainoof.TextToBF("ASCIITEXTTOPROCESS")`. The function will return the brainf code in string form.
  
 ## Scripts
  I also uploaded a few scripts I made while playing around with the language.
