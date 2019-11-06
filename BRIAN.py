@@ -52,7 +52,7 @@ class Interpreter:
         if mem[i] < 0: mem[i] = maxval - 1 #Memory underflow
 
     def OutputChar(self, i, mem):
-        print(chr(mem[i]), end = '')
+        print(chr(mem[i]), end = '', flush = True)
     def InputChar(self, i, mem):
         char = input('')
         if len(char) == cellLength:
